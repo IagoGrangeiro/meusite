@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Digitação</title>
+    <style>
+        h1::after{
+            content: '|';
+            margin-left: 5px;
+            opacity: 1;
+            animation: pisca .7s infinite;
+        }
+        @keyframes pisca{
+            0%, 100%{opacity:1;}
+            50%{opacity:0;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Cursos de UX/UI Design e Front End na Origamid</h1>
+</body>
+<script>
+    function typeWrite(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        textoArray.forEach((letra, i)=>{
+            setTimeout(()=>elemento.innerHTML += letra, 100*i);
+        });
+    };
+    const titulo = document.querySelector('h1');
+    typeWrite(titulo);
+</script>
+</html>
