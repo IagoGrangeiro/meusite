@@ -10,14 +10,10 @@
     <p>Hi my name is Doe</p>
 </body>
 <script>
-    if('serviceWorker' in navigator){
-        window.addEventListener('load', ()=>{
-            navigator.serviceWorker.register('/sw.js').then(serviceWorker => {
-        console.log("Service Worker registered: ", serviceWorker);
-    }).catch(error => {
-        console.error("Error registering the Service Worker: ", error);
-    });
-        })
-    }
+   if('serviceWorker' in navigator){
+       window.addEventListener('load', ()=>{
+           navigator.serviceWorker.register('/sw.js');
+       });
+   }
 </script>
 </html>
