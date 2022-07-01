@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Atividade Avaliativa - Semana 7 - Algorítimos e Programação de Computadores II</title>
+			<style>
+				.papel{
+					max-width: 210mm;
+					margin: auto;
+					font-family: sans-serif;
+					text-align: justify;
+				}
+				.resposta{
+					color: green;
+					font-weight: bold;
+				}
+				.errada{
+					color: red;
+					font-weight: bold;
+				}
+				.romano{
+					list-style-type: upper-roman;
+				}
+				.code{
+					font-family: monospace;
+					white-space: pre-wrap;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="papel">
+				<h1>Atividade Avaliativa da Semana 7 de Algorítimos e Programação de Computadores II</h1>
+				<ol>
+					<!--Questão 1-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a função clicked():</p>
+					<ol class="romano">
+						<li>É um método da classe Tk.</li>
+						<li>É um método da classe Button.</li>
+						<li>Quando o botão é clicado, a função clicked() é chamada a qual irá exibir uma mensagem para o usuário.</li>
+					</ol>
+					<p class="resposta">Apenas III</p>
+					<hr>
+					
+					<!--Questão 2-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a variável button:</p>
+					<ol class="romano">
+						<li>É uma classe de objeto Button.</li>
+						<li>Resposável por adicionar um botão na janela.</li>
+						<li>Quando clicado, o botão irá exibir uma janela com a frase: 'Olá <nome>' onde <nome> é a string obtida de uma caixa de texto.</li>
+					</ol>
+					<p class="resposta">Apenas II</p>
+					<hr>
+					
+					<!--Questão 3-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a variável root:</p>
+					<ol class="romano">
+						<li>É um objeto que representa a janela gráfica a ser criada.</li>
+						<li>Possui o método mainloop().</li>
+						<li>Ao longo da execução do código,  objeto será associado a três componentes gráficos.</li>
+					</ol>
+					<p class="resposta">I, II e III</p>
+					<hr>
+					
+					<!--Questão 4-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a variável label:</p>
+					<ol class="romano">
+						<li>É um objeto da classe Label.</li>
+						<li>Responsável por adicionar uma caixa para inserção de texto na janela.</li>
+						<li>O componente será adicionado em um grid, na posição (0,0).</li>
+					</ol>
+					<p class="resposta">I e III</p>
+					<hr>
+					
+					<!--Questão 5-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a função mainloop():</p>
+					<ol class="romano">
+						<li>Ela executará uma série de tarefas e retornará logo em seguida.</li>
+						<li>Ela entrará em um loop infinito.</li>
+						<li>É um método da classe Tk.</li>
+					</ol>
+					<p class="resposta">II e III</p>
+					<hr>
+					
+					<!--Questão 6-->
+					<li>Considere o programa em Python abaixo:</li>
+					<code class="code">
+from tkinter import Tk, Button, Label, Entry, END
+	
+def clicked():
+	global entry
+	name = entry.get()
+	print('Ola', name)
+	entry.delete(0, END)
+				
+root = Tk()
+label = Label(root, text='Nome:')
+label.grid(row=0, column=0)
+entry = Entry(root)
+entry.grid(row=0, column=1)
+button = Button(root, text='OK', command=clicked)
+button.grid(row=1, column=0, columnspan=2)
+root.mainloop()
+					</code>
+					<p>Sobre a variável entry:</p>
+					<ol class="romano">
+						<li>É um objeto da classe Entry.</li>
+						<li>Responsável por adicionar uma caixa de texto na janela.</li>
+						<li>O componente será posicionado no centro da janela.</li>
+					</ol>
+					<p class="resposta">I e II</p>
+				</ol>
+			</div>
+		</body>
+		<script>
+			
+		</script>
+	</html>
